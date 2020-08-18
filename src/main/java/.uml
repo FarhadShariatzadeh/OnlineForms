@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1586.0188237914901" y="382.2013811539318">IField</node>
+    <node x="0.0" y="272.0">FreeTextValidator</node>
+    <node x="1559.5188237914901" y="512.2013811539318">Field</node>
+    <node x="319.99999999999994" y="260.0">NumberValidator</node>
+    <node x="722.5" y="0.0">IValidator</node>
+    <node x="547.0" y="116.0">PasswordValidator</node>
+    <node x="829.0" y="296.5">RadioButtonValidator</node>
+    <node x="1071.0" y="260.0">CheckboxValidator</node>
+    <node x="1313.0" y="272.0">PhoneValidator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Field" target="IField">
+      <point x="0.0" y="-172.5" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="PhoneValidator" target="IValidator">
+      <point x="0.0" y="-52.5" />
+      <point x="1423.0" y="76.0" />
+      <point x="881.0833333333333" y="76.0" />
+      <point x="72.08333333333326" y="28.0" />
+    </edge>
+    <edge source="NumberValidator" target="IValidator">
+      <point x="5.6843418860808015E-14" y="-64.5" />
+      <point x="423.5" y="86.0" />
+      <point x="765.75" y="86.0" />
+      <point x="-43.25" y="28.0" />
+    </edge>
+    <edge source="CheckboxValidator" target="IValidator">
+      <point x="0.0" y="-64.5" />
+      <point x="1182.0" y="86.0" />
+      <point x="852.25" y="86.0" />
+      <point x="43.25" y="28.0" />
+    </edge>
+    <edge source="PasswordValidator" target="IValidator">
+      <point x="0.0" y="-208.5" />
+      <point x="678.0" y="96.0" />
+      <point x="794.5833333333333" y="96.0" />
+      <point x="-14.416666666666629" y="28.0" />
+    </edge>
+    <edge source="RadioButtonValidator" target="IValidator">
+      <point x="0.0" y="-28.0" />
+      <point x="940.0" y="96.0" />
+      <point x="823.4166666666665" y="96.0" />
+      <point x="14.416666666666629" y="28.0" />
+    </edge>
+    <edge source="FreeTextValidator" target="IValidator">
+      <point x="0.0" y="-52.5" />
+      <point x="150.0" y="76.0" />
+      <point x="736.9166666666665" y="76.0" />
+      <point x="-72.08333333333337" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5822308690012971" x="919.4898641122744" y="620.9186901314324" />
+  <SelectedNodes>
+    <node>Field</node>
+    <node>IField</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
