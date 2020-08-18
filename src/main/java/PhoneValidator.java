@@ -1,6 +1,6 @@
 /**
- * Validates a string phone with initial specifications of
- * length and being digits
+ * Validates a string representing a phone number with initial specifications of
+ * length and being digits.
  */
 public class PhoneValidator implements IValidator<String>{
 
@@ -9,16 +9,16 @@ public class PhoneValidator implements IValidator<String>{
   protected int phoneNumberLength;
 
   /**
-   * Construct a new phoneValidator with the phone number length
-   * @param phoneNumberLength - The phone number length to validate
+   * Constructs a new phoneValidator object with the given phone number length.
+   * @param phoneNumberLength - The phone number length to validate.
    */
   public PhoneValidator(int phoneNumberLength) {
     this.phoneNumberLength = phoneNumberLength;
   }
   /**
-   * The method get an input as an argument and validate it
-   * @param input - The input is given to the is validate
-   * @return - return true if the input is validate and return false if it is not.
+   * The method gets an input as an argument and validates it.
+   * @param input - The input is given to the method.
+   * @return - Returns true if the input is valid, false otherwise.
    */
   @Override
   public Boolean isValid(String input) {

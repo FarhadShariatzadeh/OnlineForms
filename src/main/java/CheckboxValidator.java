@@ -1,13 +1,10 @@
 import java.util.Objects;
 
 /**
- * Validator for checkboxes
+ * Validator for check boxes.
  */
 public class CheckboxValidator implements IValidator<Boolean> {
     protected Boolean checkValue;
-
-    public CheckboxValidator() {
-    }
 
     /**
      * Given a Boolean, return valid checkValue as true

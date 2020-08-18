@@ -1,9 +1,9 @@
 public interface IValidator<T> {
 
   /**
-   * The method get an input as an argument and validate it
-   * @param input - The input is given to the is validate
-   * @return - return true if the input is validate and return false if it is not.
+   * The method gets an input as an argument and validates it.
+   * @param input - The input is given to the method.
+   * @return - Returns true if the input is valid, false otherwise.
    */
   Boolean isValid(T input);
 

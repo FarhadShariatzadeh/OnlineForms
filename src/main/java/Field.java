@@ -1,8 +1,8 @@
 import java.util.Objects;
 
 /**
- * Represent the Field class. Every field track the label, value, required and validation.
- * @param <T> The type whick is passed in to this class
+ * Represents the Field class. Every Field tracks the label, value, required and validation.
+ * @param <T> The type which is passed in to this class.
  */
 public class Field<T> implements IField <T> {
 
@@ -12,12 +12,11 @@ public class Field<T> implements IField <T> {
   private IValidator<T> validator;
 
   /**
-   * Construct a new field object and initialize it with the given label, vaLue, required, and
-   * validator
-   * @param label - The label associate with the form field
-   * @param required - The boolean indicating whether a particular field must be completed before
-   * the form can be submitted.
-   * @param validator - The validator perform input validation.
+   * Constructs a new Field object and initializes it with the given label, vaLue, required, and validator.
+   * @param label - The label associated with the form Field.
+   * @param required - The boolean indicating whether a particular Field must be completed before the form
+   * can be submitted.
+   * @param validator - The validator performs input validation.
    */
   public Field(String label, boolean required, IValidator<T> validator) {
     this.label = label;
@@ -28,9 +27,9 @@ public class Field<T> implements IField <T> {
 
 
   /**
-   * A method update value, that takes a input, and validate it, and then update the value
-   * @param input - The input given to the update value
-   * @throws InvalidInputException - throw invalid input exception if the input is not valid
+   * A method updates the value, and validates it.
+   * @param input - The input given to update the value.
+   * @throws InvalidInputException - throw invalid input exception if the input is not valid.
    */
   @Override
   public void updateValue(T input) throws InvalidInputException {
@@ -45,9 +44,9 @@ public class Field<T> implements IField <T> {
   }
 
   /**
-   * A method is filled return true if the field is required and filled or it is optional
-   * @return true if it is required and is filed or it is optional and return false if it is
-   * required and it is null.
+   * A method checks if the Field is required and filled, or it is optional.
+   * @return true if it is required and is filled or it is optional. Returns false if it is
+   * required and is null.
    */
   @Override
   public boolean isFilled() {
@@ -59,16 +58,16 @@ public class Field<T> implements IField <T> {
   }
 
   /**
-   * return the value of the field
-   * @return the value
+   * Returns the value of the Field.
+   * @return the value of the Field.
    */
   public T getValue() {
     return value;
   }
 
   /**
-   * Return the label of the field
-   * @return the label of the field
+   * Return the label of the Field.
+   * @return the label of the Field.
    */
   public String getLabel() {
     return label;

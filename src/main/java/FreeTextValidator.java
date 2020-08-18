@@ -2,7 +2,7 @@ import java.lang.*;
 import java.util.Objects;
 
 /**
- * Validator for a Free Text
+ * Validator for a free text.
  */
 public class FreeTextValidator implements IValidator<String> {
 
@@ -10,18 +10,18 @@ public class FreeTextValidator implements IValidator<String> {
   protected int maxNumberOfCharactersPerLine;
 
 
-  /** Constructor for the Free Text Validator
-   * @param maxNumberOfLines
-   * @param maxNumberOfCharactersPerLine
+  /** Constructor for the FreeTextValidator.
+   * @param maxNumberOfLines The maximum number of lines to validate.
+   * @param maxNumberOfCharactersPerLine The maximum number of characters to validate.
    */
   public FreeTextValidator(int maxNumberOfLines, int maxNumberOfCharactersPerLine) {
     this.maxNumberOfLines = maxNumberOfLines;
     this.maxNumberOfCharactersPerLine = maxNumberOfCharactersPerLine;
   }
 
-  /** Validates Free Text according to set specifications
-   * @param input
-   * @return true if Free Text meets all specifications, else returns false
+  /** Validates free text according to set specifications.
+   * @param input The String to validate.
+   * @return true if the input string meets all specifications, false otherwise.
    */
     @Override
       public Boolean isValid (String input) {
@@ -46,10 +46,10 @@ public class FreeTextValidator implements IValidator<String> {
       return true;
   }
   /**
-   * Return whether or not the given object is the same as this object.
+   * Returns whether or not the given object is the same as this object.
    *
-   * @param o the object to be compared to for equality.
-   * @return whether or not the given object is the same as this object.
+   * @param o The object to be compared against for equality.
+   * @return Whether the given object is the same as this object.
    */
   @Override
   public boolean equals(Object o) {
@@ -64,9 +64,9 @@ public class FreeTextValidator implements IValidator<String> {
   }
 
   /**
-   * Return the hash value of this object.
+   * Returns the hash value of this object.
    *
-   * @return the hash value of this object.
+   * @return The hash value of this object.
    */
   @Override
   public int hashCode() {

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FieldTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-08-18T20:01:56" hostname="SEA-INTERN01" time="0.01">
+  <properties/>
+  <testcase name="maxLengthUpdateValue" classname="FieldTest" time="0.003"/>
+  <testcase name="testEqualsClass" classname="FieldTest" time="0.002"/>
+  <testcase name="updateValuePW" classname="FieldTest" time="0.0"/>
+  <testcase name="testToString" classname="FieldTest" time="0.0"/>
+  <testcase name="isFilled" classname="FieldTest" time="0.0"/>
+  <testcase name="updateValue" classname="FieldTest" time="0.0"/>
+  <testcase name="testEqualsReflexive" classname="FieldTest" time="0.0"/>
+  <testcase name="testEqualsNull" classname="FieldTest" time="0.0"/>
+  <testcase name="testEqualsDifferent1" classname="FieldTest" time="0.001"/>
+  <testcase name="testEqualsDifferent2" classname="FieldTest" time="0.0"/>
+  <testcase name="testEqualsDifferent3" classname="FieldTest" time="0.0"/>
+  <testcase name="testEqualsSymmetric" classname="FieldTest" time="0.0"/>
+  <testcase name="testHashCode" classname="FieldTest" time="0.0"/>
+  <testcase name="testEqualsTransitive" classname="FieldTest" time="0.0"/>
+  <testcase name="minLengthUpdateValue" classname="FieldTest" time="0.0"/>
+  <testcase name="testEqualsConsistent" classname="FieldTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -19,12 +19,12 @@ public class Field&lt;T&gt; implements IField &lt;T&gt; {
    * the form can be submitted.
    * @param validator - The validator perform input validation.
    */
-<span class="nc" id="L22">  public Field(String label, boolean required, IValidator&lt;T&gt; validator) {</span>
-<span class="nc" id="L23">    this.label = label;</span>
-<span class="nc" id="L24">    this.value = null;</span>
-<span class="nc" id="L25">    this.required = required;</span>
-<span class="nc" id="L26">    this.validator = validator;</span>
-<span class="nc" id="L27">  }</span>
+<span class="fc" id="L22">  public Field(String label, boolean required, IValidator&lt;T&gt; validator) {</span>
+<span class="fc" id="L23">    this.label = label;</span>
+<span class="fc" id="L24">    this.value = null;</span>
+<span class="fc" id="L25">    this.required = required;</span>
+<span class="fc" id="L26">    this.validator = validator;</span>
+<span class="fc" id="L27">  }</span>
 
 
   /**
@@ -35,14 +35,14 @@ public class Field&lt;T&gt; implements IField &lt;T&gt; {
   @Override
   public void updateValue(T input) throws InvalidInputException {
 
-<span class="nc bnc" id="L38" title="All 2 branches missed.">      if (this.validator.isValid(input)) {</span>
-<span class="nc" id="L39">        this.value = input;</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">      if (this.validator.isValid(input)) {</span>
+<span class="fc" id="L39">        this.value = input;</span>
       }
       else {
-<span class="nc" id="L42">        throw new InvalidInputException(&quot;The input is not valid&quot;);</span>
+<span class="fc" id="L42">        throw new InvalidInputException(&quot;The input is not valid&quot;);</span>
       }
 
-<span class="nc" id="L45">  }</span>
+<span class="fc" id="L45">  }</span>
 
   /**
    * A method is filled return true if the field is required and filled or it is optional
@@ -52,10 +52,10 @@ public class Field&lt;T&gt; implements IField &lt;T&gt; {
   @Override
   public boolean isFilled() {
 
-<span class="nc bnc" id="L55" title="All 4 branches missed.">    if (this.required == false || this.value != null) {</span>
-<span class="nc" id="L56">      return true;</span>
+<span class="fc bfc" id="L55" title="All 4 branches covered.">    if (this.required == false || this.value != null) {</span>
+<span class="fc" id="L56">      return true;</span>
     }
-<span class="nc" id="L58">    return false;</span>
+<span class="fc" id="L58">    return false;</span>
   }
 
   /**
@@ -63,7 +63,7 @@ public class Field&lt;T&gt; implements IField &lt;T&gt; {
    * @return the value
    */
   public T getValue() {
-<span class="nc" id="L66">    return value;</span>
+<span class="fc" id="L66">    return value;</span>
   }
 
   /**
@@ -71,40 +71,40 @@ public class Field&lt;T&gt; implements IField &lt;T&gt; {
    * @return the label of the field
    */
   public String getLabel() {
-<span class="nc" id="L74">    return label;</span>
+<span class="fc" id="L74">    return label;</span>
   }
 
   public boolean isRequired() {
-<span class="nc" id="L78">    return required;</span>
+<span class="fc" id="L78">    return required;</span>
   }
 
   public IValidator&lt;T&gt; getValidator() {
-<span class="nc" id="L82">    return validator;</span>
+<span class="fc" id="L82">    return validator;</span>
   }
 
   @Override
   public boolean equals(Object o) {
-<span class="nc bnc" id="L87" title="All 2 branches missed.">    if (this == o) {</span>
-<span class="nc" id="L88">      return true;</span>
+<span class="fc bfc" id="L87" title="All 2 branches covered.">    if (this == o) {</span>
+<span class="fc" id="L88">      return true;</span>
     }
-<span class="nc bnc" id="L90" title="All 2 branches missed.">    if (!(o instanceof Field)) {</span>
-<span class="nc" id="L91">      return false;</span>
+<span class="fc bfc" id="L90" title="All 2 branches covered.">    if (!(o instanceof Field)) {</span>
+<span class="fc" id="L91">      return false;</span>
     }
-<span class="nc" id="L93">    Field&lt;?&gt; field = (Field&lt;?&gt;) o;</span>
-<span class="nc bnc" id="L94" title="All 2 branches missed.">    return isRequired() == field.isRequired() &amp;&amp;</span>
-<span class="nc bnc" id="L95" title="All 2 branches missed.">        Objects.equals(getLabel(), field.getLabel()) &amp;&amp;</span>
-<span class="nc bnc" id="L96" title="All 2 branches missed.">        Objects.equals(getValue(), field.getValue()) &amp;&amp;</span>
-<span class="nc bnc" id="L97" title="All 2 branches missed.">        Objects.equals(getValidator(), field.getValidator());</span>
+<span class="fc" id="L93">    Field&lt;?&gt; field = (Field&lt;?&gt;) o;</span>
+<span class="fc bfc" id="L94" title="All 2 branches covered.">    return isRequired() == field.isRequired() &amp;&amp;</span>
+<span class="pc bpc" id="L95" title="1 of 2 branches missed.">        Objects.equals(getLabel(), field.getLabel()) &amp;&amp;</span>
+<span class="pc bpc" id="L96" title="1 of 2 branches missed.">        Objects.equals(getValue(), field.getValue()) &amp;&amp;</span>
+<span class="fc bfc" id="L97" title="All 2 branches covered.">        Objects.equals(getValidator(), field.getValidator());</span>
   }
 
   @Override
   public int hashCode() {
-<span class="nc" id="L102">    return Objects.hash(getLabel(), getValue(), isRequired(), getValidator());</span>
+<span class="fc" id="L102">    return Objects.hash(getLabel(), getValue(), isRequired(), getValidator());</span>
   }
 
   @Override
   public String toString() {
-<span class="nc" id="L107">    return &quot;Field{&quot; +</span>
+<span class="fc" id="L107">    return &quot;Field{&quot; +</span>
         &quot;label='&quot; + label + '\'' +
         &quot;, value=&quot; + value +
         &quot;, required=&quot; + required +

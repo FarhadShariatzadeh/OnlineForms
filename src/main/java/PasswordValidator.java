@@ -2,7 +2,7 @@ import java.util.Objects;
 
 /**
  * Validates a string password with initial specifications of
- * minimal length of 6 characters and maximal length of 12 characters
+ * minimal length of 6 characters and maximal length of 12 characters.
  */
 public class PasswordValidator implements IValidator<String>{
     protected String password;
@@ -13,7 +13,7 @@ public class PasswordValidator implements IValidator<String>{
     protected Integer minDigits;
 
     /**
-     * Constructor for a password validator with default requirements
+     * Constructor for a password validator with default requirements.
      */
     public PasswordValidator() {
         this.minLowercase = 0;
@@ -22,8 +22,8 @@ public class PasswordValidator implements IValidator<String>{
     }
 
     /**
-     * validates password according to set specifications
-     * @return true if password meets all specifications, else returns false
+     * Validates password according to set specifications.
+     * @return True if password meets all specifications, false otherwise.
      */
     @Override
     public Boolean isValid(String input){
@@ -73,34 +73,34 @@ public class PasswordValidator implements IValidator<String>{
     }
 
     /**
-     * Sets minimum requirement for lowercase letters
-     * @param minLowercase - number of required lowercase letters
+     * Sets minimum requirement for lowercase letters.
+     * @param minLowercase - Number of required lowercase letters
      */
     protected void setMinLowercase(Integer minLowercase) {
         this.minLowercase = minLowercase;
     }
 
     /**
-     * Sets minimum requirement for uppercase letters
-     * @param minUppercase - number of required uppercase letters
+     * Sets minimum requirement for uppercase letters.
+     * @param minUppercase - Number of required uppercase letters.
      */
     protected void setMinUppercase(Integer minUppercase) {
         this.minUppercase = minUppercase;
     }
 
     /**
-     * Sets minimum requirement for number of digits
-     * @param minDigits - number of required digit characts
+     * Sets minimum requirement for number of digits.
+     * @param minDigits - Number of required digit characters.
      */
     protected void setMinDigits(Integer minDigits) {
         this.minDigits = minDigits;
     }
 
     /**
-     * Return whether or not the given object is the same as this object.
+     * Returns whether or not the given object is the same as this object.
      *
-     * @param o the object to be compared to for equality.
-     * @return whether or not the given object is the same as this object.
+     * @param o The object to be compared to for equality.
+     * @return Whether or not the given object is the same as this object.
      */
     @Override
     public boolean equals(Object o) {
@@ -116,9 +116,9 @@ public class PasswordValidator implements IValidator<String>{
     }
 
     /**
-     * Return the hash value of this object.
+     * Returns the hash value of this object.
      *
-     * @return the hash value of this object.
+     * @return The hash value of this object.
      */
     @Override
     public int hashCode() {

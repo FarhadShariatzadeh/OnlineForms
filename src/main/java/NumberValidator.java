@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 /**
- * Validator for a number
+ * Validator for a number.
  */
 public class NumberValidator implements IValidator<String> {
 
@@ -10,7 +10,7 @@ public class NumberValidator implements IValidator<String> {
   private double maxValue;
   private int maxDecimalPlaces;
 
-  /** Constructor for the Number Validator
+  /** Constructor for the NumberValidator.
    * @param minValue
    * @param maxValue
    * @param maxDecimalPlaces
@@ -20,7 +20,7 @@ public class NumberValidator implements IValidator<String> {
     this.maxValue = maxValue;
     this.maxDecimalPlaces = maxDecimalPlaces;
 
-   /**  If the maximum decimal place is less than 0, then convert it to 0 */
+   /**  If the maximum decimal place is less than 0, then converts it to 0 */
     if (maxDecimalPlaces < 0) {
       this.maxDecimalPlaces = 0;
     }
@@ -45,10 +45,10 @@ public class NumberValidator implements IValidator<String> {
   }
 
   /**
-   * Return whether or not the given object is the same as this object.
+   * Returns whether or not the given object is the same as this object.
    *
-   * @param o the object to be compared to for equality.
-   * @return whether or not the given object is the same as this object.
+   * @param o The object to be compared against for equality.
+   * @return Whether or not the given object is the same as this object.
    */
 
   /*
@@ -72,9 +72,9 @@ public class NumberValidator implements IValidator<String> {
   }
 
   /**
-   * Return the hash value of this object.
+   * Returns the hash value of this object.
    *
-   * @return the hash value of this object.
+   * @return The hash value of this object.
    */
   @Override
   public int hashCode() {
