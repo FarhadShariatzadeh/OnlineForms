@@ -4,7 +4,6 @@
  */
 public class PhoneValidator implements IValidator<String>{
 
-
   final String PHONE_REGEX = "([0-9]+)";
   protected int phoneNumberLength;
 
@@ -27,8 +26,5 @@ public class PhoneValidator implements IValidator<String>{
       return true;
     }
    return false;
-
   }
-
-
 }
